@@ -2,21 +2,21 @@
 #  Skorzystaj z operacji % 10 aby pobrać wartość ostatniej cyfry.
 
 puts "podaj liczbę której cyfry chcesz zliczyć"
-liczba = gets.chomp.to_i.abs
+number = gets.chomp.to_i.abs
 
  
-dzielnik = 1
-suma = 0
-
+divisor = 1
+sum = 0
+sum
 	loop do 
-		j=liczba % dzielnik 
-		d=((liczba % (dzielnik*10))-j)/dzielnik
-		suma = d+suma
-		dzielnik = dzielnik*10
-		puts "suma na ty etapie to : #{suma}"
+		j=number % divisor 
+		d=((number % (divisor*10))-j)/divisor
+		sum = d+sum
+		divisor = divisor*10
+		puts "suma na ty etapie to : #{sum}" # tego nie trzeba zostawiłam poglądowo
 	
-		break if liczba < dzielnik
+		break if number < divisor
 	end
-puts "suma cyfr liczby #{liczba} wynosi: #{suma}"
+puts "suma cyfr liczby #{number} wynosi: #{sum}"
 
 
