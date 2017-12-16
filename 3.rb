@@ -5,15 +5,15 @@
 #Jeśli zostanie podany zły numer, pyta ponownie aż zostanie podana liczba z zakresu <1:12>
 
 puts "wpisz numer miesiąca"
-numer = gets.chomp.to_i
-miesiace_31 = [1,3,5,7,8,10,12]
+number = gets.chomp.to_i
+months_31 = [1,3,5,7,8,10,12]
 
 
 loop do
-	if numer>0 && numer <=12
-			if miesiace_31.include?(numer)
+	if number>0 && number <=12
+			if months_31.include?(number)
 				puts "Miesiąc ma 31 dni"
-			elsif numer==2
+			elsif number==2
 				puts "Miesiąc ma 28 dni"
 			else
 				puts "Miesiąc ma 30 dni"
@@ -21,7 +21,7 @@ loop do
 			break
 	else
 		puts "nie ma takiego miesiąca \n wpisz numer z zakresu 1-12 \n podaj inną liczbę: "
-		numer = gets.chomp.to_i
+		number = gets.chomp.to_i
 	end
 end
 

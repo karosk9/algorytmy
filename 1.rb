@@ -2,21 +2,32 @@
 
 
 
-def pole_kw(bok)
-	pole = bok**2
-	puts "Pole kwadratu: #{pole}"
+def square_area(a)
+	area = a**2
 end
 
-def obwod_kw(bok)
-	obwod = 4*bok
-	puts "Obwód kwadratu: #{obwod}"
+def square_ambit(a)
+	ambit = 4*a
 end
+
+def square_area_print(square_area)
+	puts "Pole kwadratu: #{square_area}"
+end
+
+def square_ambit_print(square_ambit)
+	puts "Obwód kwadratu: #{square_ambit}"
+end
+
 
 puts "Podaj długość boku kwadratu"
 
-bok = gets.chomp.to_i
-obwod_kw(bok)
-pole_kw(bok)
+a = gets.chomp.to_i
+square_area(a)
+square_ambit(a)
+square_area_print(square_area(a))
+square_ambit_print(square_ambit(a))
+
+
 
 
 

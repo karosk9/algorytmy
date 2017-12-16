@@ -7,7 +7,7 @@ puts "podaj a"
  a=gets.chomp.to_i
  puts "podaj b"
  b=gets.chomp.to_i
- puts "c"
+ puts "podaj c"
  c=gets.chomp.to_i
 
  if a<b && b<c  

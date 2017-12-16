@@ -3,10 +3,10 @@
 puts "podaj liczbę dni"
 x = gets.chomp.to_i
 
-def ile_sekund_w_dniu(dni)
-	sekundy = dni*24*60*60
+def seconds_in_day(days)
+	days*24*60*60
 end
 
-puts "w #{x} dni jest #{ile_sekund_w_dniu(x)} sekund"
+puts "w #{x} dni jest #{seconds_in_day(x)} sekund"
 
 

@@ -4,19 +4,23 @@
 
 puts "Program zwraca największą z podanych wartość"
 puts "podaj a"
- a=gets.chomp.to_i
- puts "podaj b"
- b=gets.chomp.to_i
- puts "c"
- c=gets.chomp.to_i
-
+a=gets.chomp.to_i
+puts "podaj b"
+b=gets.chomp.to_i
+puts "podaj c"
+c=gets.chomp.to_i
 
 if a<b
 	if b<c
 		puts c 
 	else
-		 puts b 
+		puts b 
 	end
 else
-	a<c ? (puts c) : (puts a) # Jakiego zapisu 'if-else' lepiej używać?
+	if a<c 
+		puts c
+	else
+		puts a 
+	end
+	#a<c ? (puts c) : (puts a) #alternatywny zapis instrukcji warunkowej
 end
