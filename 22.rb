@@ -3,7 +3,6 @@
 # raz podana została liczba ujemna oraz komunikat "Wystąpiła liczba dodatnia"
 #  jeśli chociaz raz podana została liczba dodatnia.
 
-require "pry"
 neg=0
 pos=0
 puts "Type number"

@@ -9,11 +9,11 @@ puts "podaj a"
  b=gets.chomp.to_i
 
  def suma(a,b)
- 	sum = a+b
+ 	a+b
  end
 
  def roznica(a,b)
- 	sub= a-b
+ 	a-b
  end
 
 

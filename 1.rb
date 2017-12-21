@@ -22,8 +22,7 @@ end
 puts "Podaj długość boku kwadratu"
 
 a = gets.chomp.to_i
-square_area(a)
-square_ambit(a)
+
 square_area_print(square_area(a))
 square_ambit_print(square_ambit(a))
 

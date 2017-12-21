@@ -4,13 +4,13 @@
 
 puts "Program sprawdzający czy wprowadzone 3 liczby tworzą ciąg rosnący"
 puts "podaj a"
- a=gets.chomp.to_i
- puts "podaj b"
- b=gets.chomp.to_i
- puts "podaj c"
- c=gets.chomp.to_i
+a=gets.chomp.to_i
+puts "podaj b"
+b=gets.chomp.to_i
+puts "podaj c"
+c=gets.chomp.to_i
 
- if a<b && b<c  
+if a<b && b<c  
  	puts "Ciąg rosnący"
 else
 	puts "ciąg nie jest  rosnący"

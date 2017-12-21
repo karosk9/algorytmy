@@ -14,14 +14,11 @@ if a>=b
 end
 
 loop do c=a%b
-
 	if c==0
 		puts "greatest common divisor is #{b}"
-	break
-
+break
 	else
 		a=b
 		b=c
 	end
-
 end

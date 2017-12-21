@@ -5,6 +5,7 @@
 
 puts "podaj liczbę"
 n=gets.chomp.to_i
+numbers = ""			
 
 if n<1
 	puts "Liczba musi być > 0"
@@ -13,6 +14,8 @@ else
 	while n>k
 		c=-n+k
 		k=k+1	
-		puts "#{k}, #{c} "
+		numbers<< "#{k},#{c},"
 	end
+	print numbers.chomp(",")#działa zarówno kiedy jest pojedynczy jak i podwójny cudzysłów. Czy to coś zmienia w działaniu?
+	puts ""					#dodaje nową linię. Dla lepszej czytelności w konsoli.
 end

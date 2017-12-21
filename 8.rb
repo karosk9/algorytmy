@@ -10,17 +10,9 @@ b=gets.chomp.to_i
 puts "podaj c"
 c=gets.chomp.to_i
 
-if a<b
-	if b<c
-		puts c 
-	else
-		puts b 
-	end
-else
-	if a<c 
-		puts c
-	else
-		puts a 
-	end
-	#a<c ? (puts c) : (puts a) #alternatywny zapis instrukcji warunkowej
+def max(x,y,z)
+	array=[x,y,z]
+	array.max
 end
+puts "największa wartość to #{max(a,b,c)}"
+

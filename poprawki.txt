@@ -1,0 +1,25 @@
+Schematy:
+3. ok, tym razem rozwiązałam to analogicznym równaniem, do tego które podałeś. Sądziłam że można to jakoś łatwiej zapisać, zamiast tak rozbudowanego drzewka jakie by wyszło przy 4 instrukcjach warunkowych plus ta sprawdzająca czy month==2.
+Na rozwiązanie jakie podałeś chyba bym nie wpadła, więc spróbowałam rozwiązać to inaczej. Dałam się też trochę złapać w pułapkę - nie podejrzewałam że przy zadaniu z numerkiem 3, pomiędzy innymi dużo łatwiejszymi schematami, będzie trzeba stosować takie równania i nawet nie brałam pod uwagę szukania jakiegoś wzoru.
+ Wysyłam schemat plus implementację tego rozwiązania w Ruby.
+ 22. Już wiem, w bloku na samym początku powinno być dod=0 zamiast dod=1.
+
+ Programy:
+ 1. usunęłam wywołania metod.
+ 4. poprawione
+ 5. zmieniłam metodę na zmienną :) 
+ 6. racja, usunęłam przypisania
+ 7. zapisałam warunek w metodzie i ją wywołałam.
+ 8. zamiast instrukcji warunkowych napisałam metodę dodającą do tabeli podane liczby. By zwrócić największą z nich użyłam komendy (metody? wywołania? - nie wiem jakie słowo jest tu właściwe) - array.max 
+11. zrobione, zamiast pętli: n.times {puts "Witaj"}
+16. Wypisuje w jednej lini już.
+24. Odnośnie tych wcięć: Czy jeśli mam pętlę loop a w niej instrukcję warunkową if, w której z kolei występuje 'break', to czy to 'break' ma być wcięte tak jak elementy 'szkieletowe' pętli loop czy tak jak 'if' w którym się znajduje? Czy tak jest poprawnie?:
+loop do c=a%b
+	if c==0
+		puts "greatest common divisor is #{b}"
+break
+	else
+		a=b
+		b=c
+	end
+end

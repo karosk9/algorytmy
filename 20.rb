@@ -7,14 +7,12 @@ number = gets.chomp.to_i.abs
  
 divisor = 1
 sum = 0
-sum
+
 	loop do 
 		j=number % divisor 
 		d=((number % (divisor*10))-j)/divisor
 		sum = d+sum
 		divisor = divisor*10
-		puts "suma na ty etapie to : #{sum}" # tego nie trzeba zostawiłam poglądowo
-	
 		break if number < divisor
 	end
 puts "suma cyfr liczby #{number} wynosi: #{sum}"

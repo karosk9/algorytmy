@@ -8,7 +8,6 @@ n=gets.chomp.to_i
 while n>=k
 	sum = sum + k**2
 	k=k+1
-	puts " suma = #{sum}"
 end
 puts "Suma kwadratów liczb 1..#{n} wynosi: #{sum}"
 

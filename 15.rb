@@ -10,7 +10,7 @@ if n<1
 else
 	k=1
 	while n>=k
-		puts "#{k}, -#{k} "
+		puts "#{k}, #{-k} "
 		k=k+1	
 	end
 end

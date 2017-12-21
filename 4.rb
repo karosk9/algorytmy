@@ -2,14 +2,14 @@
 
 
 
-def dolar_exchange(dolar, kurs_1)
-	dolar*kurs_1
+def dolar_exchange(dolar, rate)
+	dolar*rate
 end
 
 puts "Podaj kwotę w dolarach: "
-kwota_dolary = gets.chomp.to_f
+amount_dolars = gets.chomp.to_f
 puts "Podaj kurs dolara"
-kurs = gets.chomp.to_f
+dolar_rate = gets.chomp.to_f
 
-puts " Zamieniłeś #{kwota_dolary}$ na #{dolar_exchange(kwota_dolary,kurs)}zł po kursie #{kurs} "
+puts " Zamieniłeś #{amount_dolars}$ na #{dolar_exchange(amount_dolars,dolar_rate)}zł po kursie #{dolar_rate} "
   
